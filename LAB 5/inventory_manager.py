@@ -50,7 +50,7 @@ def display_all(inventory):
 
 
 def add_product(inventory):
-    """Adds a new product dictionary to the inventory list."""
+    # Adds a new product dictionary to the inventory list.
     print("\nAdd New Product")
     prod_id = input("Product ID: ").strip()
     
@@ -80,3 +80,47 @@ def add_product(inventory):
     }
     inventory.append(new_product)
     print("Product added successfully!")
+
+def update_stock(inventory):
+    # Updates stock quantity for a given product ID.
+    print("\nUpdate Stock")
+    prod_id = input("Enter Product ID: ").strip()
+    
+    for item in inventory:
+        if item["id"].lower() == prod_id.lower():
+            print("\nProduct Found:")
+            print(f"Name: {item['name']}")
+            print(f"Current Stock: {item['stock']}\n")
+            
+            try:
+                new_stock = int(input("New Stock Quantity: "))
+                if new_stock < 0:
+                    print("ERROR! Stock quantity cannot be negative.")
+                    return
+                item["stock"] = new_stock
+                print("Stock updated successfully!")
+                return
+            except ValueError:
+                print("ERROR! Please enter a valid integer quantity.")
+                return
+                
+    print("Product not found.")
+
+
+def search_product(inventory):
+    # Searches for a product by its ID.
+    print("\nSearch Product")
+    prod_id = input("Enter Product ID: ").strip()
+    
+    for item in inventory:
+        if item["id"].lower() == prod_id.lower():
+            print("\nProduct Found")
+            print("-" * 40)
+            print(f"ID: {item['id']}")
+            print(f"Name: {item['name']}")
+            print(f"Price: ${item['price']:.2f}")
+            print(f"Stock: {item['stock']}")
+            print("-" * 40)
+            return
+            
+    print("\nProduct not found.")
