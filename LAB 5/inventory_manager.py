@@ -50,7 +50,7 @@ def display_all(inventory):
 
 
 def add_product(inventory):
-    # Adds a new product dictionary to the inventory list.
+    """Adds a new product dictionary to the inventory list."""
     print("\nAdd New Product")
     prod_id = input("Product ID: ").strip()
     
@@ -59,3 +59,24 @@ def add_product(inventory):
         if item["id"].lower() == prod_id.lower():
             print("ERROR! Product ID already exists.")
             return
+
+    name = input("Product Name: ").strip()
+    
+    try:
+        price = float(input("Price: "))
+        stock = int(input("Stock Quantity: "))
+        if price < 0 or stock < 0:
+            print("ERROR! Price and stock must be non-negative values.")
+            return
+    except ValueError:
+        print("ERROR! Invalid numerical input for price or stock.")
+        return
+
+    new_product = {
+        "id": prod_id,
+        "name": name,
+        "price": price,
+        "stock": stock
+    }
+    inventory.append(new_product)
+    print("Product added successfully!")
