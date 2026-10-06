@@ -124,3 +124,62 @@ def search_product(inventory):
             return
             
     print("\nProduct not found.")
+    
+
+def search_product(inventory):
+    """Searches for a product by its ID."""
+    print("\nSearch Product")
+    prod_id = input("Enter Product ID: ").strip()
+    
+    for item in inventory:
+        if item["id"].lower() == prod_id.lower():
+            print("\nProduct Found")
+            print("-" * 40)
+            print(f"ID: {item['id']}")
+            print(f"Name: {item['name']}")
+            print(f"Price: ${item['price']:.2f}")
+            print(f"Stock: {item['stock']}")
+            print("-" * 40)
+            return
+            
+    print("\nProduct not found.")
+
+
+def main():
+    print("INVENTORY MANAGEMENT SYSTEM")
+    inventory = load_inventory()
+
+    while True:
+        print("\nMENU")
+        print("1. Display All Products")
+        print("2. Add Product")
+        print("3. Update Stock")
+        print("4. Search Product")
+        print("5. Save Inventory")
+        print("6. Exit")
+        
+        choice = input("Enter option: ").strip()
+
+        if choice == "1":
+            display_all(inventory)
+        elif choice == "2":
+            add_product(inventory)
+        elif choice == "3":
+            update_stock(inventory)
+        elif choice == "4":
+            search_product(inventory)
+        elif choice == "5":
+            print("\nSaving inventory...")
+            save_inventory(inventory)
+        elif choice == "6":
+            print("\nSaving inventory before exit...")
+            save_inventory(inventory)
+            print("\nThank you for using Inventory Management System.")
+            print("Program terminated.")
+            break
+        else:
+            print("Invalid option! Please enter a choice between 1 and 6.")
+
+
+if __name__ == "__main__":
+    main()
