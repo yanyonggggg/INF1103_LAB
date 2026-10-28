@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="Consolas, 'Courier New', monospace" font-size="14">
+  <rect width="760" height="470" fill="#ffffff"/>
+
+  <!-- Inventory -->
+  <rect x="30" y="60" width="300" height="230" fill="#fffbe6" stroke="#333" stroke-width="2"/>
+  <text x="180" y="88" text-anchor="middle" font-weight="bold" font-size="17">Inventory</text>
+  <line x1="30" y1="104" x2="330" y2="104" stroke="#333" stroke-width="2"/>
+  <text x="42" y="128">- __products : list</text>
+  <line x1="30" y1="146" x2="330" y2="146" stroke="#333" stroke-width="2"/>
+  <text x="42" y="170">+ add_product(product) : bool</text>
+  <text x="42" y="196">+ search_product(product_id)</text>
+  <text x="60" y="214">: Product</text>
+  <text x="42" y="240">+ display_all() : void</text>
+  <text x="42" y="266">+ get_products() : list</text>
+
+  <!-- Product -->
+  <rect x="430" y="30" width="300" height="400" fill="#e8f4ff" stroke="#333" stroke-width="2"/>
+  <text x="580" y="58" text-anchor="middle" font-weight="bold" font-size="17">Product</text>
+  <line x1="430" y1="74" x2="730" y2="74" stroke="#333" stroke-width="2"/>
+  <text x="442" y="98">- __product_id : str</text>
+  <text x="442" y="122">- __name : str</text>
+  <text x="442" y="146">- __price : float</text>
+  <text x="442" y="170">- __stock : int</text>
+  <line x1="430" y1="188" x2="730" y2="188" stroke="#333" stroke-width="2"/>
+  <text x="442" y="212">+ get_product_id() : str</text>
+  <text x="442" y="236">+ get_name() : str</text>
+  <text x="442" y="260">+ get_price() : float</text>
+  <text x="442" y="284">+ get_stock() : int</text>
+  <text x="442" y="316">+ update_stock(quantity : int)</text>
+  <text x="460" y="334">: bool</text>
+  <text x="442" y="362">+ display_information() : void</text>
+  <text x="442" y="390">+ to_dict() : dict</text>
+
+  <!-- Aggregation: Inventory (diamond) to Product -->
+  <line x1="360" y1="180" x2="430" y2="180" stroke="#333" stroke-width="2"/>
+  <polygon points="330,180 345,172 360,180 345,188" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="338" y="164" font-size="13">1</text>
+  <text x="398" y="164" font-size="13">*</text>
+  <text x="345" y="206" font-size="12" text-anchor="middle">contains</text>
+
+  <text x="30" y="455" font-size="12" fill="#555">- private   + public   (Main program inventory_manager.py: menu, input, JSON load/save; not a class)</text>
+</svg>
