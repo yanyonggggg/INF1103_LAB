@@ -1,0 +1,69 @@
+commit e3ed3a77db51ea7ad84ad2775f2001d080a502f1
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:30:36 2026 +0800
+
+    class diagram
+
+commit 33d7de2aa8d99bf77f06d320a75e6215a0b71d42
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:25:30 2026 +0800
+
+    added dockerfile
+
+commit 71c4abbf6fc06cb07d325549a6ddf9141a079c29
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:25:29 2026 +0800
+
+    added Dockerfile
+
+commit e24e688ff9e7a5d1e98521240686fe11fa49158c
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:14:48 2026 +0800
+
+    inventory_manager.py to run file
+
+commit 296ae3a0911a9f44595a59082289e6227999cf84
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:12:53 2026 +0800
+
+    reset file
+
+commit d098fbecbc14dfc7550046347f6dc789957a2612
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:11:53 2026 +0800
+
+    changes
+
+commit f29aeb5c30abe4ce5a66c675e13d0bd161aca1f8
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:08:31 2026 +0800
+
+    created py file to run programme
+
+commit d58df3f490be2e2cb994669f4a345101e73e25ac
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 15:06:33 2026 +0800
+
+    edited
+
+commit b25c48e72281de001ae3247f6b9c5870c1244f52
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 14:57:43 2026 +0800
+
+    created py file to run everything
+
+commit 74a018d657f004946d617a7d2393a6cfe2394e53
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 14:55:49 2026 +0800
+
+    created product class
+
+commit fb8597865f3f05062a81c1ba6aa160e418b26aa6
+Author: yanyong <yanyong598@gmail.com>
+Date:   Wed Oct 28 14:54:15 2026 +0800
+
+    created inventory class
+
+commit a18e6b5292b0c8b1c6d8ff3df8f53561ad87d711
+Author: yanyonggggg <2602476@sit.singaporetech.edu.sg>
+Date:   Wed Oct 28 14:43:29 2026 +0800
