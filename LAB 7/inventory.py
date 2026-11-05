@@ -24,6 +24,7 @@ class Inventory:
             print("No products available.")
             return
         for product in self.__products:
+            # Each product knows how to display itself (overridden per type).
             product.display_information()
 
     def get_products(self):
