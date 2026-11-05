@@ -1,0 +1,58 @@
+[
+    {
+        "id": "P001",
+        "name": "Laptop",
+        "price": 1200.0,
+        "stock": 15,
+        "type": "physical",
+        "weight": 2.0
+    },
+    {
+        "id": "P002",
+        "name": "Mouse",
+        "price": 25.5,
+        "stock": 40,
+        "type": "physical",
+        "weight": 0.1
+    },
+    {
+        "id": "P003",
+        "name": "Guitar",
+        "price": 450.0,
+        "stock": 5,
+        "type": "physical",
+        "weight": 3.5
+    },
+    {
+        "id": "D001",
+        "name": "Operating System",
+        "price": 139.99,
+        "stock": 100,
+        "type": "digital",
+        "download_size": 5200.0
+    },
+    {
+        "id": "D002",
+        "name": "Photo Editor",
+        "price": 59.0,
+        "stock": 50,
+        "type": "digital",
+        "download_size": 850.0
+    },
+    {
+        "id": "P010",
+        "name": "Drum Kit",
+        "price": 899.0,
+        "stock": 2,
+        "type": "physical",
+        "weight": 12.5
+    },
+    {
+        "id": "D010",
+        "name": "Antivirus",
+        "price": 49.99,
+        "stock": 200,
+        "type": "digital",
+        "download_size": 300.0
+    }
+]
