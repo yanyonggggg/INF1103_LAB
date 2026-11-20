@@ -1,0 +1,80 @@
+{
+    "suppliers": [
+        {
+            "id": "S001",
+            "name": "TechWorld Distributors",
+            "email": "sales@techworld.example"
+        },
+        {
+            "id": "S002",
+            "name": "Melody Music Supply",
+            "email": "orders@melodymusic.example"
+        },
+        {
+            "id": "S003",
+            "name": "SoftKey Licensing",
+            "email": "licences@softkey.example"
+        },
+        {
+            "id": "S004",
+            "name": "SecureSoft",
+            "email": "hello@securesoft.example"
+        }
+    ],
+    "products": [
+        {
+            "id": "P001",
+            "name": "Laptop",
+            "price": 1200.0,
+            "stock": 15,
+            "supplier_id": "S001",
+            "type": "physical",
+            "weight": 2.0
+        },
+        {
+            "id": "P002",
+            "name": "Mouse",
+            "price": 25.5,
+            "stock": 40,
+            "supplier_id": "S001",
+            "type": "physical",
+            "weight": 0.1
+        },
+        {
+            "id": "P003",
+            "name": "Guitar",
+            "price": 450.0,
+            "stock": 5,
+            "supplier_id": "S002",
+            "type": "physical",
+            "weight": 3.5
+        },
+        {
+            "id": "D001",
+            "name": "Operating System",
+            "price": 139.99,
+            "stock": 100,
+            "supplier_id": "S003",
+            "type": "digital",
+            "download_size": 5200.0
+        },
+        {
+            "id": "D002",
+            "name": "Photo Editor",
+            "price": 59.0,
+            "stock": 50,
+            "supplier_id": "S003",
+            "type": "digital",
+            "download_size": 850.0
+        },
+        {
+            "id": "D010",
+            "name": "Antivirus",
+            "price": 49.99,
+            "stock": 200,
+            "supplier_id": "S004",
+            "type": "digital",
+            "download_size": 300.0
+        }
+    ]
+}
